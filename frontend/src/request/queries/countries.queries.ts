@@ -9,3 +9,16 @@ export const REGISTER = gql`
 		}
 	}
 `;
+
+export const findone = gql`
+	query country($code: String!) {
+		country(code: $code) {
+			name
+			emoji
+			code
+			continent {
+				name
+			}
+		}
+	}
+`;

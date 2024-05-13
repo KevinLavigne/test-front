@@ -38,24 +38,24 @@ const Home = () => {
 				onFinish={finish}
 				layout="vertical"
 				style={{
-					margin: '2% 10%',
+					margin: '2% 5%',
 					padding: '1%',
 					border: 'black solid 1px',
 					borderRadius: '8px',
 				}}
 			>
-				<Row gutter={16}>
-					<Col span={7}>
+				<Row gutter={16} wrap>
+					<Col span={6}>
 						<Form.Item label="Name" name="name">
 							<Input />
 						</Form.Item>
 					</Col>
-					<Col span={7}>
+					<Col span={6}>
 						<Form.Item label="Emoji" name="emoji">
 							<Input />
 						</Form.Item>
 					</Col>
-					<Col span={7}>
+					<Col span={6}>
 						<Form.Item label="Code" name="code">
 							<Input />
 						</Form.Item>
@@ -70,6 +70,7 @@ const Home = () => {
 			<Space
 				direction="horizontal"
 				align="center"
+				wrap
 				style={{
 					display: 'flex',
 					justifyContent: 'center',
